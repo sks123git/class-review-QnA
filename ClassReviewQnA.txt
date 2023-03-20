@@ -1,0 +1,46 @@
+Review QnA
+
+1. what is SOLID principle?
+-> These principle
+Single responsilbility - A class should have only one responsibility and should have less reasons to change.
+			Low responsibility will have lower test cases and lower dependencies.
+Open for extension, closed for modification - Classes should be open for extension and closed for modification,
+						to stop ourself from creating potential new bugs.
+liskov substitution - As per this, a class should be replacable with another class without 
+			disrupting the behaviour of replaced class.
+Interface segregation -  As per this, larger interfaces should be split into smaller ones. By doing so, we can ensure 
+			that implementing classes only need to be concerned about the methods that are of interest to them.
+Dependency Inversion - As per this, High level module should not depend on low level module, they should depend on Abstraction.
+
+
+2. If file doesn't exist and we execute File file = new File("demo.txt"), will this throw exception?
+-> It will not throw any exception. Since, it will create a new file.
+
+
+3. What is FileWriter?
+-> A file  writer is a class in java.io package, which is used to write the data in the file. 
+
+
+4. Can we use scanner class to read double format values?
+-> yes, we can use scanner to read double values, It is good option to read primitive types.
+
+
+5. If Pallavi account has 10000 and money is transferred to kundan account and it takes 5 secs, 
+   If anyone tries to see the pallavi balance within that 5 secs, what will be account balance?
+-> The account balance will be 10000 only, this property is called isolation of ACID property.
+
+
+6. try(FileReader fr = new FileReader()) , what is this declaration called?
+-> This is called try with resources, we dont need to close the stream explicitly as it is taken care by JVM.
+
+
+7. Where will the prepared statement sit in memory or in database?
+-> It will be there in both the places.
+
+
+8. What is Candidate key?
+-> A candidate key SQL is a column or a set of columns that can qualify as a primary key in the database. 
+   There can be multiple SQL candidate keys in a database relation and each candidate can work as a primary key for the table. 
+
+9. If a student has 2 mobile numbers and 2 email ids, which one can be set as primary key and unique key?
+-> we cannot implement primary key since it doesnt allow duplicates, we can use any one as unique key.						
